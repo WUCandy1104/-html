@@ -1,0 +1,379 @@
+<html>
+
+  <head>
+    <title>明新科大資管系網頁</title>
+    <meta charset="utf-8">
+    
+    <link href="https://cdn.bootcss.com/flexslider/2.6.3/flexslider.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/flexslider/2.6.3/jquery.flexslider-min.js"></script>        
+    <script>
+        $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                rtl: true
+            });
+        });
+    </script>
+    
+    <style>
+      * {
+        margin: 0;
+        color: #996B1F;
+        /*font-size:25px;*/
+        text-align: center;
+      }
+
+      .top {
+        background-color: white;
+        height: 100px;
+      }
+
+      .top .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        margin: 10px;
+      }
+
+      .top .container .logo {
+        font-size: 40px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        /*border:1px solid red;*/
+      }
+
+      .top .container img {
+        width: 120px;
+      }
+
+      .top .container .top-nav {
+        font-size: 18px;
+        /*border:1px solid red;*/
+      }
+
+      .top .container .top-nav a {
+        text-decoration: none;
+      }
+
+      
+
+      .nav {
+        background-color: #CCB38C;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #CCB38C;
+      }
+
+      .nav li {
+        float: left;
+      }
+
+      .nav li a {
+        display: block;
+        font-weight: bold;
+        color: #FFFAF0;
+        text-align: center;
+        padding: 15px 25px;
+        text-decoration: none;
+      }
+
+      .nav li a:hover {
+        background-color: #E69966;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+        /*使用block呈現上下排列*/
+      }
+
+      li.dropdown:hover {
+        background-color: #E69966;
+        /*設定背景顏色*/
+      }
+
+      .dropdown-content {
+        /*設定下拉選單內容格式*/
+        display: none;
+        position: absolute;
+        background-color: #CCB38C;
+        min-width: 150px;
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        /*設定下拉選單連結內容格式*/
+        color: black;
+        padding: 10px 10px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        /*border:1px solid red;*/
+      }
+
+      .slider {
+        /* 圖片欄四周圓角 */
+        /* background-color: black; */ 
+        /* <li><img src="http://img.soogif.com/FQa3SbJAGmATOEWUyyydkfDsFo24E1OB.gif"/></li> (備用圖片網址) */
+      }
+          
+      .slider h4 {
+        font-size: 20px;
+        color: #CD853F;
+        padding-bottom:10px;
+      }
+
+      .banner {
+        background-image: linear-gradient(#FFFAFA,#CCB38C);
+        padding: 20px;
+        /*border:1px solid red;*/
+      }
+      
+      .banner h1{
+        padding: 20px;
+    }
+
+      .faculty {
+        background-color: black;
+        height: 200px;
+      }
+
+      .faculty {
+        display: block;
+        justify-content: center;
+        background-color:white;
+        padding:50px;
+      }
+      
+      .faculty h2 {
+        font-size: 25px;
+        color: #996B1F;
+        padding-bottom:30px;
+      }
+      
+      .faculty .container {
+         /*border:1px solid red;*/
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 50px;
+      }
+      
+      .faculty .teacher{
+         /*border:1px solid blue;*/
+        display:block;
+        text-decoration: none;
+      }
+      
+      .faculty .teacher img{
+        height: 160px;
+        width: 160px;
+      }
+      
+      .faculty .teacher h3{
+        color: #FFFAF0;
+        background-color: #CCB38C;
+        text-align: center;                 
+      }
+
+      .contact {
+        background-color: white;
+        height: 250px;;
+      }
+      
+       .contact {
+        display: block;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;                
+     }
+     
+       .contact h2{
+        color: #996B1F;
+        font-weight: bold;
+        font-size: 25px;
+     }
+     
+       .contact .infos{
+        display:flex;
+        margin-top: 30px; 
+        justify-content: center;
+     }
+     
+      .contact .infos .left{
+        display:block;
+        text-align: left;
+        margin-right: 30px;
+     }
+     
+      .contact .infos .left b{
+        display:block;
+        text-align: left;
+        margin-top: 10px;
+        text-decoration: bold;
+        color: Gray;
+        font-size: 18px;
+        line-height: 18px;
+     }
+     
+      .contact .infos .left span{
+        display:block;
+        text-align: left;
+        margin-top: 10px;
+        color: rgba(39,40,34,0.5);
+        font-size: 16px;
+        padding-left: 27px;
+     }
+     
+     .contact .infos .right{
+        height: 200px;  
+     }
+     
+     .contact .infos .right iframe{
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgba(39,40,34,0.50);
+     }
+     
+      .footer {
+        background-color: black;
+        height: 20px;
+      }
+      
+      .footer{
+        display: flex;
+        justify-content: center;
+        background-color: rgb(25,26,30);
+        padding: 30px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class=top>
+      <div class=container>
+        <div class=logo>
+        <img src="https://i.pinimg.com/236x/d4/bd/96/d4bd966857aef18903e97346c789d068.jpg"> 毛小孩之家
+        </div>
+
+        <div class=top-nav>
+          <a href=#>會員登入</a>
+          <a href=#>本月優惠</a>
+          <a href=#>搜尋</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="#home">首頁</a></li>
+        <li class="dropdown"><a href="#introduction">專區</a>
+        
+         <div class="dropdown-content">
+            <a href="#">狗狗專區</a>
+            <a href="#">貓咪專區</a>
+            </div>
+         </li>
+            
+        <li class="dropdown"><a href="#faculty">好物推薦</a>
+
+          <div class="dropdown-content">
+            <a href="#">罐頭</a>
+            <a href="#">點心</a>
+            <a href="#">清潔用品</a>
+          </div>
+        </li>
+
+        <li><a href="#about">聯繫我們</a></li>
+
+      </ul>
+    </div>
+
+        <div class="slider">
+        <div class="flexslider">
+        <ul class="slides">   
+        
+         <li><img src="https://www.justdog.tw/wp-content/uploads/sites/5/2021/06/09b1aff292c497422f2f52fd425529d0.jpg" /></li>      
+        
+         <li><img src="http://inews.gtimg.com/newsapp_match/0/13205512774/0" /></li>
+        
+          <li><img src="http://inews.gtimg.com/newsapp_match/0/13205512896/0" /></li>
+                         
+         </ul>
+       </div>
+    </div>
+    
+     <div class="slider">
+     <h2>新品推薦</h2>
+     <h4>PETKO 佩可 | 自動貓砂盆</h4>  
+     <div class="flexslider">
+     
+    <iframe width="600" height="350" src="https://www.youtube.com/embed/KxG7kDmO1wA?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    </div>
+    </div>
+    
+    <div class="banner" id="introduction">
+            <h1>~&emsp;摯愛&emsp;~</h1>
+            <h1>用最好的 照顧最愛的，</h1>
+            <h1>熱誠的服務與精神，</h1>
+            <h1>開發對寵物最好的商品。</h1>
+        </div>
+
+    <div class="faculty" id="faculty">   
+    <h2>好物推薦</h2>    
+    <div class="container">
+    
+        <a class="teacher" href="">
+            <img src="https://i.pinimg.com/236x/c1/28/e7/c128e71c4ea64399a620a38434ce2671.jpg" />         
+            <h3>罐頭</h3>
+        </a>
+        
+        <a class="teacher" href="">
+            <img src="https://i.pinimg.com/564x/97/e9/73/97e97364f4d25085df2c19566c76c3f0.jpg" />            
+            <h3>點心</h3>           
+       </a>
+       
+       <a class="teacher" href="">
+           <img src="https://i.pinimg.com/236x/f3/e7/da/f3e7dadf3cf46706b892ad4145d29957.jpg" />
+           <h3>清潔用品</h3>
+       </a>  
+    </div>
+</div>
+
+   <div class="contact" id="about">
+      <h2>相關資訊</h2>
+      <div class="infos">
+      <div class="left">
+      <b>經國路一段十字路口</b>
+      <span>新竹市北區經國路一段776號</span>
+      <b> 電話:03-3522-888</b>
+      <span>分機:3431、3432、3433</span>
+      <b> 傳真:03-3522-888</b>
+      <span>分機:3440</span>
+    </div>
+    
+    <div class="right">
+    
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.4497778508708!2d120.9680725742451!3d24.814287647105747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346835cf4b7e5ee5%3A0xbc957d500940e3de!2zMzAw5paw56u55biC5YyX5Y2A57aT5ZyL6Lev5LiA5q61Nzc26Jmf!5e0!3m2!1szh-TW!2stw!4v1671108264951!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     
+    </div>
+  </div>
+</div>
+
+   <div class="footer">
+    &copy;Copyright 2022 Department of Information Management, MUST. All rights reserved. 維護者 WU Candy
+ </div>
+
+  </body>
+</html>
